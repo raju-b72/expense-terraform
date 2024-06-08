@@ -1,5 +1,5 @@
 bucket = "raj-buck"
-key    = "expense-terraform/dev/state"
+key    = "expense-terraform/prod/state"
 region = "us-east-1"
 
 #stat
