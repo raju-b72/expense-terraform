@@ -25,7 +25,7 @@ resource "null_resource" "ansible" {
     "ansible-pull -i localhost, -U https://github.com/raju-b72/expense-ansible expense.yml -e env=${var.env} -e role_name=${var.component}"
 
   ]
-}
+  }
 }
 resource "aws_route53_record" "server" {
   name    = "${var.component}-${var.env}"
