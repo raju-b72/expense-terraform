@@ -78,7 +78,7 @@ module "backend" {
    subnet_ids = module.vpc.db_subnets
    vpc_id = module.vpc.vpc_id
 
-#    kms_key_id = var.kms_key_id
+    kms_key_id = var.kms_key_id
  }
 
 module "vpc" {
