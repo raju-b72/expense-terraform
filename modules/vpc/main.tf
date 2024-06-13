@@ -185,7 +185,7 @@ resource "aws_route_table_association" "db" {                          #for asso
 
   count = length(var.db_subnets)
   subnet_id      = aws_subnet.db[count.index].id                      #we gave count because 2 subnets were present
-  route_table_id = aws_route_table.db[count.index].id                  #2 routetable were there
+  route_table_id = aws_route_table.db[count.index].id                  #2 routetable were there in the
 }
 
 
