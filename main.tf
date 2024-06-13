@@ -16,7 +16,7 @@ module "frontend" {
   certificate_arn     = var.certificate_arn
   lb_app_port_sg_cidr = ["0.0.0.0/0"]
   lb_ports            = { http: 80, https: 443 }
-  lb_subnets          = module.vpc.public_subnets
+#lb_subnets          = module.vpc.public_subnets
   lb_type             = "public"
   zone_id             = var.zone_id
 }
