@@ -42,10 +42,10 @@ resource "aws_instance" "instance" {
   instance_type = var.instance_type
   vpc_security_group_ids = [aws_security_group.main.id]                        #we created our own security group
   subnet_id = var.subnets[0]                                                 #we give first subnet
-#   root_block_device {
-#     encrypted  = true
-#     kms_key_id = var.kms_key_id
-#   }
+   root_block_device {
+     encrypted  = true
+     kms_key_id = var.kms_key_id
+   }
   #12
 
 

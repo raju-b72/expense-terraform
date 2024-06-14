@@ -33,4 +33,4 @@ variable "lb_ports" {
   default = {}
 }
 
-# variable "kms_key_id" {}
+ variable "kms_key_id" {}

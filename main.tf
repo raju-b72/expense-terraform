@@ -19,6 +19,7 @@ module "frontend" {
   lb_subnets          = module.vpc.public_subnets
   lb_type             = "public"
   zone_id             = var.zone_id
+  kms_key_id          = var.kms_key_id
 }
 # #
 module "backend" {
@@ -42,6 +43,7 @@ module "backend" {
   lb_subnets          = module.vpc.backend_subnets
   lb_type             = "private"
   zone_id             = var.zone_id
+  kms_key_id          = var.kms_key_id
 }
 # #
 # #
